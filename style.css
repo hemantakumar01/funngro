@@ -200,12 +200,18 @@ input {
   flex-direction: column;
   gap: 10px;
 }
+nav p {
+  display: none;
+}
 @media only screen and (max-width: 800px) {
   .hero {
     grid-template-columns: 1fr;
   }
   nav ul {
     display: none;
+  }
+  nav p {
+    display: block;
   }
   .hero img {
     width: 300px;
@@ -227,5 +233,18 @@ input {
   .items {
     grid-template-columns: 1fr 1fr;
     border-radius: none;
+  }
+  .box {
+    box-shadow: none;
+    padding: 10px 20px;
+  }
+  .left h1 {
+    font-size: 2.3rem;
+  }
+  .left p {
+    font-size: 15px;
+  }
+  .left {
+    padding-bottom: 20px;
   }
 }
